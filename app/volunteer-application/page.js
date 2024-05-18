@@ -81,12 +81,15 @@ const commitCombo = {
 export default function VolunteerApplication() {
   return (
     <div>
-      <div className="text-center mx-auto w-3/5 mb-4 font-medium">
+      <div className={"w-full h-svh bg-[url('/husky-background.jpg')] bg-cover"}>test</div>
+
+      <div className="text-center mx-auto w-3/5 mb-4 font-medium font-sans space-y-4">
+        <h1 className="text-3xl font-extrabold text-zinc-900">Thank you for your interest in volunteering with Rocky Road Rescue!</h1>
         <p>
           Here at Rocky Road Rescue we are always looking to expand our volunteer team and hear new and innovative ideas. If you are keen to get involved, we'd love to have you on board! Please complete our Volunteer
           Application below and someone from our Events & Fundraising Team will be in touch shortly.
         </p>
-        <p className="py-4">If you have any questions about volunteering, please email us at events@rockyroadrescue.com. Click here to see what positions we currently have available.</p>
+        <p className="">If you have any questions about volunteering, please email us at events@rockyroadrescue.com. Click here to see what positions we currently have available.</p>
       </div>
       <div className="mx-auto w-11/12 sm:w-10/12 md:w-3/5 bg-[#f8fefee1] px-2 py-1 rounded-lg shadow-xl font-medium border border-blue-900">
         <form>
@@ -131,13 +134,10 @@ export default function VolunteerApplication() {
           </div>
 
           <div className="mt-6 flex items-center justify-end gap-x-6">
-            <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
-              Cancel
-            </button>
             <button
               type="submit"
-              className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              Save
+              className="rounded-md bg-sky-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Submit
             </button>
           </div>
         </form>

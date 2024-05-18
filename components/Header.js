@@ -50,30 +50,33 @@ export default function Header({ children }) {
 
   return (
     <header className="">
-      <nav className="mx-auto flex gap-4 items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <a href="/" className="-m-1.5 p-1.5 flex-shrink-0">
+      <nav className="mx-auto flex gap-4 items-center py-2 lg:px-8 bg-zinc-900" aria-label="Global">
+        <a href="/" className="mr-4 flex-shrink-0 ">
           <img className="h-20  rounded-full w-full" src={"/rrr-logo.jpg"} alt="" />
         </a>
-
-        <div className="flex lg:hidden">
-          <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onClick={() => setMobileMenuOpen(true)}>
+        <a href="/" className="text-[#fff] text-2xl font-thin leading-6 font-semi-bold whitespace-nowrap font-teko ">
+          <p>ROCKY ROAD</p>
+          <p>RESCUE</p>
+        </a>
+        <span className="h-16 border mx-4 hidde sm:visible"></span>
+        <div className="flex lg:hidden ml-auto">
+          <button type="button" className="  inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onClick={() => setMobileMenuOpen(true)}>
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-10 w-10 text-red-800" aria-hidden="true" />
+            <Bars3Icon className="h-10 w-10 text-red-700" aria-hidden="true" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-4 mx-auto">
-          <a
-            href="https://www.facebook.com/RockyRoadRescueCanada/events?ref=page_internal"
-            target="_none"
-            className="text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-4 ">
+          <a href="https://www.facebook.com/RockyRoadRescueCanada/events?ref=page_internal" target="_none" className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2  ">
             Events
           </a>
 
           <Popover className="relative ">
-            <PopoverButton className="flex items-center   text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 outline-none">
-              Adopt
-              <ChevronDownIcon className="h-7 w-7 flex-none text-red-800" aria-hidden="true" />
-            </PopoverButton>
+            <div className="">
+              <PopoverButton className="flex items-center text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 outline-none">
+                Adopt
+                <ChevronDownIcon className="h-6 w-6 flex-none text-[#fff] " aria-hidden="true" />
+              </PopoverButton>
+            </div>
 
             <Transition
               as={Fragment}
@@ -83,12 +86,12 @@ export default function Header({ children }) {
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1">
-              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#fde9ce]  border-red-800 border">
+              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white border border-black z-100 ">
                 <div className="p-4">
                   {adopt.map((item) => (
-                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#fef3e1]">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-[#fef3e1] group-hover:bg-[#fde9ce]">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-800" aria-hidden="true" />
+                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg hover:bg-gray-50 group-hover:bg-white">
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-sky-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
@@ -105,9 +108,9 @@ export default function Header({ children }) {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center   text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 outline-none">
+            <PopoverButton className="flex items-center text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 outline-none">
               Foster
-              <ChevronDownIcon className="h-7 w-7 flex-none text-red-800" aria-hidden="true" />
+              <ChevronDownIcon className="h-6 w-6 flex-none text-[#fff]" aria-hidden="true" />
             </PopoverButton>
 
             <Transition
@@ -118,12 +121,12 @@ export default function Header({ children }) {
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1">
-              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#fde9ce] shadow-lg  border-red-800 border">
+              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white border border-black z-100 ">
                 <div className="p-4">
                   {foster.map((item) => (
-                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#fef3e1]">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-[#fef3e1] group-hover:bg-[#fde9ce]">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-800" aria-hidden="true" />
+                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg hover:bg-gray-50 group-hover:bg-white">
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-sky-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
@@ -139,9 +142,9 @@ export default function Header({ children }) {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="flex items-center  text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 outline-none">
+            <PopoverButton className="flex items-center text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 outline-none">
               Volunteer
-              <ChevronDownIcon className="h-7 w-7 flex-none text-red-800" aria-hidden="true" />
+              <ChevronDownIcon className="h-6 w-6 flex-none text-[#fff]" aria-hidden="true" />
             </PopoverButton>
 
             <Transition
@@ -152,12 +155,12 @@ export default function Header({ children }) {
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1">
-              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#fde9ce] shadow-lg border-red-800 border ">
+              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white border border-black z-100 ">
                 <div className="p-4">
                   {volunteer.map((item) => (
-                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#fef3e1]">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-[#fef3e1] group-hover:bg-[#fde9ce]">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-800" aria-hidden="true" />
+                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg hover:bg-gray-50 group-hover:bg-white">
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-sky-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
@@ -173,17 +176,17 @@ export default function Header({ children }) {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-red-800 whitespace-nowrap font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+          <a href="#" className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap">
             Pet Resources
           </a>
-          <a href="#" className="text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+          <a href="#" className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap">
             Merch
           </a>
-          <a href="#" className="text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+          <a href="#" className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap">
             About
           </a>
-          <a href="#" className=" text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
-            Donate
+          <a href="#" className=" text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap">
+            <div>Donate Now</div>
           </a>
         </PopoverGroup>
       </nav>
