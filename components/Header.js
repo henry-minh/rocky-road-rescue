@@ -29,9 +29,9 @@ const foster = [
   //   { name: "Integrations", description: "Connect with third-party tools", href: "#", icon: SquaresPlusIcon },
   //   { name: "Automations", description: "Build strategic funnels that will convert", href: "#", icon: ArrowPathIcon },
 ];
-const volunteer_header_data = [
-  { name: "Volunteer with Rocky Road Rescue", description: "Get a better understanding of your traffic", href: "#", icon: UserGroupIcon },
-  { name: "Volunteer Application", description: "Speak directly to your customers", href: "/volunteer-application", icon: CursorArrowRaysIcon },
+const volunteer = [
+  { name: "Volunteer with Rocky Road Rescue", description: "Interested in volunteering with Rocky Road Rescue?", href: "#", icon: UserGroupIcon },
+  { name: "Volunteer Application", description: "Fill out our volunteer application form!", href: "/volunteer-application", icon: CursorArrowRaysIcon },
   // { name: "Foster Application", description: "Your customers’ data will be safe and secure", href: "#", icon: FingerPrintIcon },
   //   { name: "Integrations", description: "Connect with third-party tools", href: "#", icon: SquaresPlusIcon },
   //   { name: "Automations", description: "Build strategic funnels that will convert", href: "#", icon: ArrowPathIcon },
@@ -69,8 +69,8 @@ export default function Header({ children }) {
             Events
           </a>
 
-          <Popover className="relative">
-            <PopoverButton className="flex items-center   text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+          <Popover className="relative ">
+            <PopoverButton className="flex items-center   text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 outline-none">
               Adopt
               <ChevronDownIcon className="h-7 w-7 flex-none text-red-800" aria-hidden="true" />
             </PopoverButton>
@@ -83,12 +83,12 @@ export default function Header({ children }) {
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1">
-              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#fde9ce]  border-red-800 border">
                 <div className="p-4">
                   {adopt.map((item) => (
-                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#fef3e1]">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-[#fef3e1] group-hover:bg-[#fde9ce]">
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-800" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
@@ -105,7 +105,7 @@ export default function Header({ children }) {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center   text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+            <PopoverButton className="flex items-center   text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 outline-none">
               Foster
               <ChevronDownIcon className="h-7 w-7 flex-none text-red-800" aria-hidden="true" />
             </PopoverButton>
@@ -118,12 +118,12 @@ export default function Header({ children }) {
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1">
-              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#fde9ce] shadow-lg  border-red-800 border">
                 <div className="p-4">
                   {foster.map((item) => (
-                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#fef3e1]">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-[#fef3e1] group-hover:bg-[#fde9ce]">
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-800" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
@@ -139,7 +139,7 @@ export default function Header({ children }) {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="flex items-center   text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+            <PopoverButton className="flex items-center  text-red-800 font-light text-2xl font-supersized leading-6 transition ease-in-out delay-150 hover:-translate-y-1 duration-300 outline-none">
               Volunteer
               <ChevronDownIcon className="h-7 w-7 flex-none text-red-800" aria-hidden="true" />
             </PopoverButton>
@@ -152,12 +152,12 @@ export default function Header({ children }) {
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1">
-              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-[#fde9ce] shadow-lg border-red-800 border ">
                 <div className="p-4">
-                  {volunteer_header_data.map((item) => (
-                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                  {volunteer.map((item) => (
+                    <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-[#fef3e1]">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-[#fef3e1] group-hover:bg-[#fde9ce]">
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-red-800" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">

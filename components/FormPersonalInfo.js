@@ -3,7 +3,7 @@ export default function FormPersonalInfo() {
     <div className="mt-4">
       <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
         <div className="sm:col-span-3 text-sm font-medium">
-          <label htmlFor="first-name" className="block font-semibold leading-6 text-gray-900">
+          <label htmlFor="first-name" className="block font-semibold leading-6 text-sky-900">
             First name
             <span className=" text-red-600"> *</span>
           </label>
@@ -19,7 +19,7 @@ export default function FormPersonalInfo() {
         </div>
 
         <div className="sm:col-span-3">
-          <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-sky-900">
             Last name
             <span className=" text-red-600"> *</span>
           </label>
@@ -35,7 +35,7 @@ export default function FormPersonalInfo() {
         </div>
 
         <div className="sm:col-span-4">
-          <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="email" className="block text-sm font-semibold leading-6 text-sky-900">
             Email address
             <span className=" text-red-600"> *</span>
           </label>
@@ -50,7 +50,7 @@ export default function FormPersonalInfo() {
           </div>
         </div>
         <div className="sm:col-span-4">
-          <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="email" className="block text-sm font-semibold leading-6 text-sky-900">
             Phone Number
             <span className=" text-red-600"> *</span>
           </label>
@@ -65,7 +65,7 @@ export default function FormPersonalInfo() {
           </div>
         </div>
         <div className="sm:col-span-3">
-          <label htmlFor="country" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="country" className="block text-sm font-semibold leading-6 text-sky-900">
             Country
             <span className=" text-red-600"> *</span>
           </label>
@@ -83,7 +83,7 @@ export default function FormPersonalInfo() {
         </div>
 
         <div className="col-span-full">
-          <label htmlFor="street-address" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="street-address" className="block text-sm font-semibold leading-6 text-sky-900">
             Street address
             <span className=" text-red-600"> *</span>
           </label>
@@ -99,7 +99,7 @@ export default function FormPersonalInfo() {
         </div>
 
         <div className="sm:col-span-2 sm:col-start-1">
-          <label htmlFor="city" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="city" className="block text-sm font-semibold leading-6 text-sky-900">
             City
             <span className=" text-red-600"> *</span>
           </label>
@@ -115,7 +115,7 @@ export default function FormPersonalInfo() {
         </div>
 
         <div className="sm:col-span-2">
-          <label htmlFor="region" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="region" className="block text-sm font-semibold leading-6 text-sky-900">
             Province / State
             <span className=" text-red-600"> *</span>
           </label>
@@ -131,7 +131,7 @@ export default function FormPersonalInfo() {
         </div>
 
         <div className="sm:col-span-2">
-          <label htmlFor="postal-code" className="block text-sm font-semibold leading-6 text-gray-900">
+          <label htmlFor="postal-code" className="block text-sm font-semibold leading-6 text-sky-900">
             ZIP / Postal Code
             <span className=" text-red-600"> *</span>
           </label>

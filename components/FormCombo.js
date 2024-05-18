@@ -2,7 +2,7 @@ export default function ComboBox({ title, options }) {
   return (
     <div className="mt-4">
       <fieldset>
-        <legend className="text-sm font-semibold leading-6 text-gray-900">
+        <legend className="text-sm font-semibold leading-6 text-sky-900">
           {title} <span className=" text-red-600"> *</span>
         </legend>
 

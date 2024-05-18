@@ -1,4 +1,4 @@
-export default function FormText({ title }) {
+export default function FormTextArea({ title }) {
   return (
     <div>
       <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">

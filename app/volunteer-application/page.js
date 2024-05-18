@@ -88,16 +88,16 @@ export default function VolunteerApplication() {
         </p>
         <p className="py-4">If you have any questions about volunteering, please email us at events@rockyroadrescue.com. Click here to see what positions we currently have available.</p>
       </div>
-      <div className="mx-auto w-11/12 sm:w-10/12 md:w-3/5 bg-white px-2 py-1 rounded-lg shadow-xl font-medium">
+      <div className="mx-auto w-11/12 sm:w-10/12 md:w-3/5 bg-[#f8fefee1] px-2 py-1 rounded-lg shadow-xl font-medium border border-blue-900">
         <form>
           <div className="border-b border-gray-900/10 text-center my-2 pb-2 ">
-            <h1 className=" font-semibold leading-7 text-gray-900 text-4xl ">Volunteer Application</h1>
+            <h1 className=" font-semibold leading-7  text-4xl text-sky-900 ">Volunteer Application</h1>
           </div>
 
           <div>
             {/* Personal Details Section */}
             <div className="border-b border-gray-900/10 pb-5">
-              <h2 className="text-base font-semibold leading-7 text-gray-900">Personal Details</h2>
+              <h2 className="text-base font-semibold leading-7 text-sky-900">Personal Details</h2>
               <FormPersonalInfo></FormPersonalInfo>
               <FormCombo title={useFacebookCombo.title} options={useFacebookCombo.options}></FormCombo>
               <FormCombo title={haveCarCombo.title} options={haveCarCombo.options}></FormCombo>
@@ -106,7 +106,7 @@ export default function VolunteerApplication() {
 
             {/*Volunteering Section*/}
             <div className="border-b border-gray-900/10 pb-5 space-y-4">
-              <h2 className="text-base font-semibold leading-7 text-gray-900">Volunteering</h2>
+              <h2 className="text-base font-semibold leading-7 text-sky-900">Volunteering</h2>
               <FormText title="Is there a specific role that you are applying for? If yes, please state."></FormText>
               <FormCheckbox title={volunteerTypeCheckbox.title} options={volunteerTypeCheckbox.options}></FormCheckbox>
               <FormText title=" If you selected 'other' to the above question, please specify here."></FormText>
@@ -119,7 +119,7 @@ export default function VolunteerApplication() {
 
             {/*Experience Section*/}
             <div className="border-b border-gray-900/10 ">
-              <h2 className="text-base font-semibold leading-7 text-gray-900">Experience</h2>
+              <h2 className="text-base font-semibold leading-7 text-sky-900">Experience</h2>
               <p className="mt-1 text-sm leading-6 text-gray-600">We'll always let you know about important changes, but you pick what else you want to hear about.</p>
               <div className="mt-4 space-y-4">
                 <FormTextArea title="Why would you like to volunteer with Rocky Road Rescue?"></FormTextArea>

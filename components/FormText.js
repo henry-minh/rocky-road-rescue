@@ -1,7 +1,7 @@
 export default function FormText({ title }) {
   return (
     <div className="mt-4">
-      <label htmlFor="about" className="block text-sm font-semibold leading-6 text-gray-900">
+      <label htmlFor="about" className="block text-sm font-semibold leading-6 text-sky-900">
         {title}
       </label>
       <div className="mt-2">
