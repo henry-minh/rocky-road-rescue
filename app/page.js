@@ -1,6 +1,6 @@
 "use client";
 import { ReactTyped, Typed } from "react-typed";
-import React from "react";
+import React, { useRef, useState } from "react";
 
 export default function Home() {
   const reactTypedData = ["Donate", "Foster", "Adopt", "Volunteer", "Share"];
@@ -34,9 +34,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full h-screen ">
-        <div className="text-center">Adoptable Dogs</div>
-      </div>
+      <div className="w-full h-screen "></div>
     </div>
   );
 }

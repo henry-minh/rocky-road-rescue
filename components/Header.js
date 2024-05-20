@@ -29,7 +29,10 @@ import {
   ClipboardDocumentListIcon,
   QuestionMarkCircleIcon,
   UserGroupIcon,
+  HomeIcon,
+  HomeModernIcon,
 } from "@heroicons/react/24/outline";
+
 import {
   ChevronDownIcon,
   PhoneIcon,
@@ -39,21 +42,22 @@ import {
 const adopt = [
   {
     name: "Adoption Proccess",
-    description: "Get a better understanding of your traffic",
+    description:
+      "Everything you need to know when adopting with Rocky Road Rescue",
     href: "/adoption-process",
-    icon: ClipboardDocumentListIcon,
+    icon: CursorArrowRaysIcon,
   },
   {
     name: "Adoptable Dogs",
-    description: "Speak directly to your customers",
+    description: "Meet our adoptable dogs!",
     href: "/adoptable-dogs",
-    icon: CursorArrowRaysIcon,
+    icon: HomeIcon,
   },
   {
     name: "Adoption Application",
-    description: "Speak directly to your customers",
+    description: "Fill out our adoption application form!",
     href: "/adoption-application",
-    icon: CursorArrowRaysIcon,
+    icon: ClipboardDocumentListIcon,
   },
   //   { name: "Foster Application", description: "Your customers’ data will be safe and secure", href: "#", icon: FingerPrintIcon },
   //   { name: "Integrations", description: "Connect with third-party tools", href: "#", icon: SquaresPlusIcon },
@@ -62,28 +66,29 @@ const adopt = [
 const foster = [
   {
     name: "Why Foster",
-    description: "Get a better understanding of your traffic",
+    description:
+      "Fostering a dog means you get to help give a dog a second chance at life.",
     href: "#",
     icon: QuestionMarkCircleIcon,
   },
   {
     name: "Dogs Looking For Fosters",
-    description: "Speak directly to your customers",
+    description: "Meet our Dogs looking for a temporary home.",
     href: "#",
-    icon: CursorArrowRaysIcon,
+    icon: HomeModernIcon,
   },
   {
     name: "Foster Application",
-    description: "Your customers’ data will be safe and secure",
+    description: "Are you a good fit? Fill out our foster application form!",
     href: "#",
-    icon: CursorArrowRaysIcon,
+    icon: ClipboardDocumentListIcon,
   },
   //   { name: "Integrations", description: "Connect with third-party tools", href: "#", icon: SquaresPlusIcon },
   //   { name: "Automations", description: "Build strategic funnels that will convert", href: "#", icon: ArrowPathIcon },
 ];
 const volunteer = [
   {
-    name: "Volunteer with Rocky Road Rescue",
+    name: "Volunteer With Rocky Road Rescue",
     description: "Interested in volunteering with Rocky Road Rescue?",
     href: "#",
     icon: UserGroupIcon,
@@ -92,7 +97,7 @@ const volunteer = [
     name: "Volunteer Application",
     description: "Fill out our volunteer application form!",
     href: "/volunteer-application",
-    icon: CursorArrowRaysIcon,
+    icon: ClipboardDocumentListIcon,
   },
   // { name: "Foster Application", description: "Your customers’ data will be safe and secure", href: "#", icon: FingerPrintIcon },
   //   { name: "Integrations", description: "Connect with third-party tools", href: "#", icon: SquaresPlusIcon },
@@ -145,19 +150,23 @@ export default function Header({ children }) {
           <a
             href="https://www.facebook.com/RockyRoadRescueCanada/events?ref=page_internal"
             target="_none"
-            className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2  "
+            className="text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300   "
           >
             Events
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
 
           <Popover className="relative ">
             <div className="">
-              <PopoverButton className="flex items-center text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 outline-none">
-                Adopt
-                <ChevronDownIcon
-                  className="h-6 w-6 flex-none text-[#fff] "
-                  aria-hidden="true"
-                />
+              <PopoverButton className=" items-center text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300 outline-none">
+                <div className="flex">
+                  Adopt
+                  <ChevronDownIcon
+                    className="h-6 w-6 flex-none text-[#fff] "
+                    aria-hidden="true"
+                  />
+                </div>
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
               </PopoverButton>
             </div>
 
@@ -201,12 +210,15 @@ export default function Header({ children }) {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 outline-none">
-              Foster
-              <ChevronDownIcon
-                className="h-6 w-6 flex-none text-[#fff]"
-                aria-hidden="true"
-              />
+            <PopoverButton className=" items-center text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300 outline-none">
+              <div className="flex">
+                Foster
+                <ChevronDownIcon
+                  className="h-6 w-6 flex-none text-[#fff] "
+                  aria-hidden="true"
+                />
+              </div>
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
             </PopoverButton>
 
             <Transition
@@ -248,12 +260,15 @@ export default function Header({ children }) {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="flex items-center text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 outline-none">
-              Volunteer
-              <ChevronDownIcon
-                className="h-6 w-6 flex-none text-[#fff]"
-                aria-hidden="true"
-              />
+            <PopoverButton className=" items-center text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300 outline-none">
+              <div className="flex">
+                Volunteer
+                <ChevronDownIcon
+                  className="h-6 w-6 flex-none text-[#fff] "
+                  aria-hidden="true"
+                />
+              </div>
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
             </PopoverButton>
 
             <Transition
@@ -297,27 +312,31 @@ export default function Header({ children }) {
 
           <a
             href="#"
-            className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap"
+            className="text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300"
           >
             Pet Resources
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
           <a
             href="#"
-            className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap"
+            className="text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300"
           >
             Merch
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
           <a
             href="#"
-            className="text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap"
+            className="text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300"
           >
             About
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
           <a
             href="#"
-            className=" text-[#fff] text-lg leading-6 font-semi-bold hover:underline underline-offset-[6px] decoration-2 whitespace-nowrap"
+            className=" text-[#fff] text-lg leading-6 font-semi-bold group  transition duration-300"
           >
-            <div>Donate Now</div>
+            Donate Now
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
           </a>
         </PopoverGroup>
       </nav>
