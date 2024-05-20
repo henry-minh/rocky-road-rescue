@@ -81,13 +81,13 @@ const commitCombo = {
 export default function VolunteerApplication() {
   return (
     <div>
-      <div className={"w-full h-svh bg-[url('/husky-background.jpg')] bg-cover"}>test</div>
+      <div className={"w-full h-svh bg-[url(/husky-background.jpg)] bg-cover"}>test</div>
 
       <div className="text-center mx-auto w-3/5 mb-4 font-medium font-sans space-y-4">
         <h1 className="text-3xl font-extrabold text-zinc-900">Thank you for your interest in volunteering with Rocky Road Rescue!</h1>
         <p>
-          Here at Rocky Road Rescue we are always looking to expand our volunteer team and hear new and innovative ideas. If you are keen to get involved, we'd love to have you on board! Please complete our Volunteer
-          Application below and someone from our Events & Fundraising Team will be in touch shortly.
+          Here at Rocky Road Rescue we are always looking to expand our volunteer team and hear new and innovative ideas. If you are keen to get involved, we&quot;d love to have you on board! Please complete our
+          Volunteer Application below and someone from our Events & Fundraising Team will be in touch shortly.
         </p>
         <p className="">If you have any questions about volunteering, please email us at events@rockyroadrescue.com. Click here to see what positions we currently have available.</p>
       </div>
@@ -112,18 +112,18 @@ export default function VolunteerApplication() {
               <h2 className="text-base font-semibold leading-7 text-sky-900">Volunteering</h2>
               <FormText title="Is there a specific role that you are applying for? If yes, please state."></FormText>
               <FormCheckbox title={volunteerTypeCheckbox.title} options={volunteerTypeCheckbox.options}></FormCheckbox>
-              <FormText title=" If you selected 'other' to the above question, please specify here."></FormText>
+              <FormText title=' If you selected "other" to the above question, please specify here.'></FormText>
               <FormCheckbox title={locationCheckbox.title} options={locationCheckbox.options}></FormCheckbox>
-              <FormText title=" If you selected 'other' to the above question, please specify here."></FormText>
+              <FormText title=' If you selected "other" to the above question, please specify here.'></FormText>
               <FormCombo title={commitCombo.title} options={commitCombo.options}></FormCombo>
-              <FormText title=" If you selected 'other' to the above question, please specify here."></FormText>
+              <FormText title=' If you selected "other" to the above question, please specify here.'></FormText>
               <FormText title=" What is your availability for volunteering? Eg. Weekends, Evenings, Tuesday mornings only, etc."></FormText>
             </div>
 
             {/*Experience Section*/}
             <div className="border-b border-gray-900/10 ">
               <h2 className="text-base font-semibold leading-7 text-sky-900">Experience</h2>
-              <p className="mt-1 text-sm leading-6 text-gray-600">We'll always let you know about important changes, but you pick what else you want to hear about.</p>
+              <p className="mt-1 text-sm leading-6 text-gray-600">We&quot;ll always let you know about important changes, but you pick what else you want to hear about.</p>
               <div className="mt-4 space-y-4">
                 <FormTextArea title="Why would you like to volunteer with Rocky Road Rescue?"></FormTextArea>
                 <FormTextArea title="What skills, experience and knowledge do you have that would help your volunteer work? (Please give details)"></FormTextArea>

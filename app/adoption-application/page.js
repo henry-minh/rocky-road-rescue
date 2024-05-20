@@ -12,7 +12,7 @@ export const metadata = {
     // ...
     plugins: [
       // ...
-      require('@tailwindcss/forms'),
+      require(&quot;@tailwindcss/forms&quot;),
     ],
   }
   ```
@@ -37,7 +37,7 @@ export default function AdoptionApplication() {
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base font-semibold leading-7 text-gray-900">Personal Details</h2>
               <p className="mt-1 text-sm leading-6 text-gray-600">
-                Here at Rocky Road Rescue we are always looking to expand our volunteer team and hear new and innovative ideas. If you are keen to get involved, we'd love to have you on board!
+                Here at Rocky Road Rescue we are always looking to expand our volunteer team and hear new and innovative ideas. If you are keen to get involved, we&quot;d love to have you on board!
               </p>
               <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3 text-sm font-medium">
@@ -190,7 +190,7 @@ export default function AdoptionApplication() {
 
             <div className="border-b border-gray-900/10 pb-12">
               <h2 className="text-base font-semibold leading-7 text-gray-900">Experience</h2>
-              <p className="mt-1 text-sm leading-6 text-gray-600">We'll always let you know about important changes, but you pick what else you want to hear about.</p>
+              <p className="mt-1 text-sm leading-6 text-gray-600">We&quot;ll always let you know about important changes, but you pick what else you want to hear about.</p>
 
               <div className="mt-10 space-y-10">
                 <fieldset>
