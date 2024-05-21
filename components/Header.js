@@ -351,10 +351,12 @@ export default function Header({ children }) {
                         <div className="flex items-center justify-between font-teko">
                             <a href="#" className="-m-1.5 flex p-1.5">
                                 <span className="sr-only">Your Company</span>
-                                <img
+                                <Image
                                     className="h-16 w-auto rounded-full"
                                     src="/rrr-logo.jpg"
                                     alt="rrr logo"
+                                    width={200}
+                                    height={200}
                                 />
                                 <div className="ml-4 font-teko text-2xl font-thin">
                                     <p>ROCKY ROAD</p>
