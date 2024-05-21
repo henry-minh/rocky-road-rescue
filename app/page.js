@@ -41,15 +41,7 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            <div className="flex h-svh w-full flex-col ">
-                <div className="mt-4 text-center font-teko text-6xl text-black drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
-                    ADOPTABLES
-                </div>
-                <div className="h-full"></div>
-                <div className="mb-12 mt-auto">
-                    <SwiperComponent slides={SLIDES} options={OPTIONS} />
-                </div>
-            </div>
+            <SwiperComponent />
         </div>
     );
 }

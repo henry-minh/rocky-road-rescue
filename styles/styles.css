@@ -1,5 +1,5 @@
 .embla {
-    --slide-height: rem;
+    --slide-height: 14rem;
     --slide-spacing: 1rem;
     --slide-size: 180px;
 
@@ -10,6 +10,7 @@
     --slide-spacing-lg: 2rem;
     --slide-height-lg: 14rem;
     --slide-size-lg: 320px;
+
     cursor: grab;
 }
 /* .embla__viewport {
@@ -47,13 +48,13 @@
   }
 } */
 /* large */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .embla__slide {
         flex: 0 0 var(--slide-size-lg);
-
+        font-size: 40px;
         padding-left: var(--slide-spacing-lg);
     }
     .embla__slide__number {
         height: var(--slide-height-lg);
     }
-}
+} */
