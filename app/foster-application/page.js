@@ -3,9 +3,9 @@ export const metadata = {
     description: 'Rocky Road Rescue Foster: Application',
 };
 
-export default async function FosterApplication() {
+export default function FosterApplication() {
     return (
-        <div>
+        <div className="text-zinc-900">
             <p>Foster Process Under Construction 🚧</p>
         </div>
     );

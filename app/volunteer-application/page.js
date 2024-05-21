@@ -98,9 +98,9 @@ const commitCombo = {
 };
 export default function VolunteerApplication() {
     return (
-        <div className="mt-8 font-teko">
+        <div className="mt-8 font-teko text-zinc-900">
             <div className="mx-auto mb-4 w-3/5  space-y-4 text-center  text-2xl ">
-                <h1 className="text-4xl font-extrabold text-zinc-900">
+                <h1 className="text-4xl font-extrabold ">
                     Thank you for your interest in volunteering with Rocky Road
                     Rescue!
                 </h1>

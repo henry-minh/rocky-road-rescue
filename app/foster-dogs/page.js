@@ -3,9 +3,9 @@ export const metadata = {
     description: 'Rocky Road Rescue Foster Dogs Page',
 };
 
-export default async function AdoptableDogs() {
+export default function AdoptableDogs() {
     return (
-        <div>
+        <div className="text-zinc-900">
             <p>Foster Dogs Under Construction 🚧</p>
         </div>
     );

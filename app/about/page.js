@@ -3,9 +3,9 @@ export const metadata = {
     description: 'Rocky Road Rescue: About',
 };
 
-export default async function About() {
+export default function About() {
     return (
-        <div>
+        <div className="text-zinc-900">
             <p>About Page Under Construction 🚧</p>
         </div>
     );

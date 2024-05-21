@@ -3,9 +3,9 @@ export const metadata = {
     description: 'Rocky Road Rescue: Merch',
 };
 
-export default async function Merch() {
+export default function Merch() {
     return (
-        <div>
+        <div className="text-zinc-900">
             <p>Merch Page Under Construction 🚧</p>
         </div>
     );

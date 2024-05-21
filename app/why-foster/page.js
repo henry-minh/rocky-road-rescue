@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function WhyFoster() {
     return (
-        <div>
+        <div className="text-zinc-900">
             <p>Why Foster Under Construction 🚧</p>
         </div>
     );

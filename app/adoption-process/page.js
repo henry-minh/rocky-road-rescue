@@ -3,9 +3,9 @@ export const metadata = {
     description: 'Rocky Road Rescue: Adoption Process',
 };
 
-export default async function AdoptionProcess() {
+export default function AdoptionProcess() {
     return (
-        <div>
+        <div className="text-zinc-900">
             <p>Adoption Process Under Construction 🚧</p>
         </div>
     );

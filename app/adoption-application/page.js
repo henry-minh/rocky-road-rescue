@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function AdoptionApplication() {
     return (
-        <div>
+        <div className="text-zinc-900">
             <p>Adoption Application Under Construction 🚧</p>
         </div>
     );
