@@ -2,7 +2,7 @@ export default function ComboBox({ title, options }) {
     return (
         <div className="mt-4">
             <fieldset>
-                <legend className="text-sm font-semibold leading-6 text-sky-900">
+                <legend className="text-xl  font-semibold leading-6 text-sky-900">
                     {title} <span className=" text-red-600"> *</span>
                 </legend>
 
@@ -20,7 +20,7 @@ export default function ComboBox({ title, options }) {
                             />
                             <label
                                 htmlFor={state.id}
-                                className="block text-sm font-medium leading-6 text-gray-900"
+                                className="block text-lg font-medium leading-6 text-gray-900"
                             >
                                 {state.text}
                             </label>

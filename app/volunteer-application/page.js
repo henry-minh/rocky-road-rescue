@@ -98,17 +98,9 @@ const commitCombo = {
 };
 export default function VolunteerApplication() {
     return (
-        <div>
-            <div
-                className={
-                    'h-svh w-full bg-[url(/husky-background.jpg)] bg-cover'
-                }
-            >
-                test
-            </div>
-
-            <div className="mx-auto mb-4 w-3/5 space-y-4 text-center font-sans font-medium">
-                <h1 className="text-3xl font-extrabold text-zinc-900">
+        <div className="mt-8 font-teko">
+            <div className="mx-auto mb-4 w-3/5  space-y-4 text-center  text-2xl ">
+                <h1 className="text-4xl font-extrabold text-zinc-900">
                     Thank you for your interest in volunteering with Rocky Road
                     Rescue!
                 </h1>
@@ -137,7 +129,7 @@ export default function VolunteerApplication() {
                     <div>
                         {/* Personal Details Section */}
                         <div className="border-b border-gray-900/10 pb-5">
-                            <h2 className="text-base font-semibold leading-7 text-sky-900">
+                            <h2 className="text-3xl font-semibold leading-7 text-sky-900">
                                 Personal Details
                             </h2>
                             <FormPersonalInfo></FormPersonalInfo>
@@ -157,7 +149,7 @@ export default function VolunteerApplication() {
 
                         {/*Volunteering Section*/}
                         <div className="space-y-4 border-b border-gray-900/10 pb-5">
-                            <h2 className="text-base font-semibold leading-7 text-sky-900">
+                            <h2 className="text-3xl  font-semibold leading-7 text-sky-900">
                                 Volunteering
                             </h2>
                             <FormText title="Is there a specific role that you are applying for? If yes, please state."></FormText>
@@ -181,10 +173,10 @@ export default function VolunteerApplication() {
 
                         {/*Experience Section*/}
                         <div className="border-b border-gray-900/10 ">
-                            <h2 className="text-base font-semibold leading-7 text-sky-900">
+                            <h2 className="text-3xl font-semibold leading-7 text-sky-900">
                                 Experience
                             </h2>
-                            <p className="mt-1 text-sm leading-6 text-gray-600">
+                            <p className="mt-1 text-lg leading-6 text-gray-600">
                                 We&quot;ll always let you know about important
                                 changes, but you pick what else you want to hear
                                 about.

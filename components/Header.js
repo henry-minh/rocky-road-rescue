@@ -192,7 +192,7 @@ export default function Header({ children }) {
                                         >
                                             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg hover:bg-gray-50 group-hover:bg-white">
                                                 <item.icon
-                                                    className="h-6 w-6 text-gray-600 group-hover:text-sky-600"
+                                                    className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
                                                     aria-hidden="true"
                                                 />
                                             </div>
@@ -245,7 +245,7 @@ export default function Header({ children }) {
                                         >
                                             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg hover:bg-gray-50 group-hover:bg-white">
                                                 <item.icon
-                                                    className="h-6 w-6 text-gray-600 group-hover:text-sky-600"
+                                                    className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
                                                     aria-hidden="true"
                                                 />
                                             </div>
@@ -297,7 +297,7 @@ export default function Header({ children }) {
                                         >
                                             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg hover:bg-gray-50 group-hover:bg-white">
                                                 <item.icon
-                                                    className="h-6 w-6 text-gray-600 group-hover:text-sky-600"
+                                                    className="h-6 w-6 text-gray-600 group-hover:text-orange-600"
                                                     aria-hidden="true"
                                                 />
                                             </div>
