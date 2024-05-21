@@ -6,8 +6,8 @@ import FormTextArea from '@/components/FormTextArea';
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid';
 
 export const metadata = {
-    title: 'About',
-    description: 'Rocky Road Rescue About Page',
+    title: 'Volunteer Application',
+    description: 'Rocky Road Rescue: Volunteer Application',
 };
 const useFacebookCombo = {
     title: 'Do you use Facebook?',

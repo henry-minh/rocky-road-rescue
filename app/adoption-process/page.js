@@ -1,12 +1,12 @@
 export const metadata = {
-    title: 'About',
-    description: 'Rocky Road Rescue About Page',
+    title: 'Adoption Process',
+    description: 'Rocky Road Rescue: Adoption Process',
 };
 
 export default async function AdoptionProcess() {
     return (
         <div>
-            <p>Adoption Process</p>
+            <p>Adoption Process Under Construction 🚧</p>
         </div>
     );
 }

@@ -1,12 +1,12 @@
 export const metadata = {
-    title: 'About',
-    description: 'Rocky Road Rescue About Page',
+    title: 'Adoptable Dogs',
+    description: 'Rocky Road Rescue: Adoptable Dogs',
 };
 
 export default async function AdoptableDogs() {
     return (
         <div>
-            <p>Adoptable Dogs</p>
+            <p>Adoptable Dogs Under Construction 🚧</p>
         </div>
     );
 }
