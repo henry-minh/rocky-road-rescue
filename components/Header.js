@@ -1,12 +1,4 @@
 'use client';
-// export default function Header({ children }) {
-//   return (
-//     <div>
-//       <p>header</p>
-//       {children}
-//     </div>
-//   );
-// }
 
 import {
     PopoverGroup,
@@ -16,6 +8,7 @@ import {
     DisclosureButton,
     DisclosurePanel,
 } from '@headlessui/react';
+import Image from 'next/image';
 import { Fragment, useState } from 'react';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import {
@@ -117,10 +110,12 @@ export default function Header({ children }) {
                     aria-label="Global"
                 >
                     <a href="/" className=" flex-shrink-0 ">
-                        <img
+                        <Image
                             className="h-20 w-full rounded-full p-2"
                             src={'/rrr-logo.jpg'}
-                            alt=""
+                            width={200}
+                            height={200}
+                            alt="RRR Logo"
                         />
                     </a>
                     <a
