@@ -48,11 +48,12 @@ export default function SwiperComponent(props) {
                         >
                             <div className="embla__slide__number transform  rounded-xl border-l-[12px] border-r-[12px] border-t-[12px] border-[#fafaf0]   bg-[#fafaf0] transition-transform duration-300 hover:-translate-y-4 ">
                                 <div className=" h-full  w-full text-center">
-                                    <img
+                                    <Image
                                         src="/husky-background.jpg"
                                         className="h-11/12  w-full rounded-xl object-cover align-text-bottom"
-                                        loading="lazy"
-                                    ></img>
+                                        width={400}
+                                        height={400}
+                                    ></Image>
                                     <p className="mt-auto font-normal text-black">
                                         {index} Dexter
                                     </p>
