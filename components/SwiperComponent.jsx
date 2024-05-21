@@ -1,9 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
-
+import Image from 'next/image';
 import '@styles/styles.css';
-const SwiperComponent = (props) => {
+
+export default function SwiperComponent(props) {
     // const { slides, options } = props;
     // const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({ stopOnInteraction: false, stopOnFocusIn: true })]);
 
@@ -50,6 +51,7 @@ const SwiperComponent = (props) => {
                                     <img
                                         src="/husky-background.jpg"
                                         className="h-11/12  w-full rounded-xl object-cover align-text-bottom"
+                                        loading="lazy"
                                     ></img>
                                     <p className="mt-auto font-normal text-black">
                                         {index} Dexter
@@ -62,6 +64,4 @@ const SwiperComponent = (props) => {
             </div>
         </div>
     );
-};
-
-export default SwiperComponent;
+}

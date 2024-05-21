@@ -362,8 +362,8 @@ export default function Header({ children }) {
                                     alt="rrr logo"
                                 />
                                 <div className="ml-4 font-teko text-2xl font-thin">
-                                    <p>Rocky Road</p>
-                                    <p>Rescue</p>
+                                    <p>ROCKY ROAD</p>
+                                    <p>RESCUE</p>
                                 </div>
                             </a>
                             <button
