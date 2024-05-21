@@ -103,7 +103,7 @@ export default function Header({ children }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="h-[88px] fixed w-full">
+    <header className="h-[88px]  w-full">
       <nav className="mx-auto flex gap-4 items-center py-2 lg:px-8 bg-zinc-900" aria-label="Global">
         <a href="/" className="mr-4 flex-shrink-0 ">
           <img className="h-20  rounded-full w-full" src={"/rrr-logo.jpg"} alt="" />
