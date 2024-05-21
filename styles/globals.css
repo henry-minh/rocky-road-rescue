@@ -19,7 +19,8 @@
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
+    /* color: rgb(var(--foreground-rgb)); */
+    color: black;
     /* background: rgb(228 225 229); */
 
     /* background: rgb(255, 222, 171); */
