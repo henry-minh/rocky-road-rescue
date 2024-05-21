@@ -51,7 +51,7 @@ const SwiperComponent = (props) => {
                                         src="/husky-background.jpg"
                                         className="h-11/12  w-full rounded-xl object-cover align-text-bottom"
                                     ></img>
-                                    <p className="mt-auto font-normal">
+                                    <p className="mt-auto font-normal text-black">
                                         {index} Dexter
                                     </p>
                                 </div>
