@@ -160,13 +160,13 @@ export default function SwiperComponent(props) {
     return (
         <div className="flex  w-full flex-col text-white md:h-[80vh]">
             <div className="my-auto h-full w-full md:flex">
-                <div className="my-auto">
+                <div className="my-auto w-full">
                     <div className="h-full w-full md:flex">
-                        <div className="max-w-1/2  h-full w-full md:flex-1">
+                        <div className="  h-full w-full md:flex-1">
                             <div className="py-8">
                                 <Image
                                     src={ourDogs[currentSlideIndex].img}
-                                    className="mx-auto h-48 w-72 rounded-2xl object-cover  object-center drop-shadow-md md:h-72 md:w-96"
+                                    className="mx-auto h-48 w-72 rounded-2xl object-cover  object-center drop-shadow-md md:h-72 md:w-96 2xl:h-96 2xl:w-[36rem]"
                                     width={100}
                                     height={100}
                                     loading="eager"

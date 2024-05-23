@@ -1,13 +1,11 @@
 'use client';
-import { ReactTyped, Typed } from 'react-typed';
-import React, { useRef, useState } from 'react';
+import { ReactTyped } from 'react-typed';
+import React from 'react';
 import SwiperComponent from '@/components/SwiperComponent';
-import useEmblaCarousel from 'embla-carousel-react';
+
 export default function Home() {
-    // Embla Carousel Variables
-    const OPTIONS = { loop: true, align: 'start' };
-    const SLIDE_COUNT = 20;
-    const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+    // Need To Fix Home Banner Text
+
     // Typed JS Variables
     const reactTypedData = ['Donate', 'Foster', 'Adopt', 'Volunteer', 'Share'];
 
