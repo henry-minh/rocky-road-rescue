@@ -125,7 +125,7 @@ export default function SwiperComponent(props) {
     ];
     // const { slides, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-        AutoScroll({ speed: 0.6 }),
+        AutoScroll({ speed: 0.5 }),
     ]);
     const [isPlaying, setIsPlaying] = useState(true);
 
@@ -159,48 +159,36 @@ export default function SwiperComponent(props) {
     const test = '/husky-background.jpg';
     return (
         <div className="flex  w-full flex-col text-white md:h-[80vh]">
-            <motion.div
-                key={currentSlideIndex}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                    ease: 'easeInOut',
-                    duration: 1.5,
-                    delay: 0.12,
-                }}
-                className="my-auto"
-            >
-                <div className="h-full w-full md:flex">
-                    <div className="max-w-1/2  h-full w-full md:flex-1">
-                        <div className="py-8">
-                            <Image
-                                src={ourDogs[currentSlideIndex].img}
-                                className="mx-auto h-48 w-72 rounded-2xl object-cover  object-center drop-shadow-md md:h-72 md:w-96"
-                                width={100}
-                                height={100}
-                                loading="eager"
-                                alt={ourDogs[currentSlideIndex].name}
-                            />
-                        </div>
-                    </div>
-                    <div className="my-auto px-2 md:flex-1">
-                        <h1 className=" text-center text-3xl">
-                            {ourDogs[currentSlideIndex].name}
-                        </h1>
-                        <p className="text-center">
-                            {ourDogs[currentSlideIndex].profile}
-                        </p>
-                        <div className="my-4 flex w-full justify-center">
-                            <button
-                                type="button"
-                                className="rounded-full border border-black bg-black px-12 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-white hover:text-black"
-                            >
-                                Adopt
-                            </button>
-                        </div>
+            <div className="h-full w-full md:flex">
+                <div className="max-w-1/2  h-full w-full md:flex-1">
+                    <div className="py-8">
+                        <Image
+                            src={ourDogs[currentSlideIndex].img}
+                            className="mx-auto h-48 w-72 rounded-2xl object-cover  object-center drop-shadow-md md:h-72 md:w-96"
+                            width={200}
+                            height={200}
+                            loading="eager"
+                            alt={ourDogs[currentSlideIndex].name}
+                        />
                     </div>
                 </div>
-            </motion.div>
+                <div className="my-auto px-2 md:flex-1">
+                    <h1 className=" text-center text-3xl">
+                        {ourDogs[currentSlideIndex].name}
+                    </h1>
+                    <p className="text-center">
+                        {ourDogs[currentSlideIndex].profile}
+                    </p>
+                    <div className="my-4 flex w-full justify-center">
+                        <button
+                            type="button"
+                            className="rounded-full border border-black bg-black px-12 py-2.5 text-sm font-medium text-white transition duration-300 hover:bg-white hover:text-black"
+                        >
+                            Adopt
+                        </button>
+                    </div>
+                </div>
+            </div>
 
             <div className="mb-3 mt-auto">
                 <div className="embla">
@@ -224,8 +212,8 @@ export default function SwiperComponent(props) {
                                             <Image
                                                 src={element.img}
                                                 className="h-full max-h-[80%] w-full rounded-xl object-cover object-center"
-                                                width={100}
-                                                height={100}
+                                                width={200}
+                                                height={200}
                                                 loading="eager"
                                                 alt={element.name}
                                             />
