@@ -221,14 +221,15 @@ export default function SwiperComponent(props) {
                                 >
                                     <div className="embla__slide__number h-full transform rounded-2xl border-[12px] border-[#fef5d8] bg-[#fef5d8] drop-shadow-2xl transition-transform duration-300 hover:-translate-y-4">
                                         <div className="flex h-full w-full flex-col">
-                                            <Image
+                                            {/*                                             <Image
                                                 src={element.img}
                                                 className="h-full max-h-[80%] w-full rounded-xl object-cover object-center"
                                                 width={200}
                                                 height={200}
                                                 loading="eager"
                                                 alt={element.name}
-                                            />
+                                            />*/}
+
                                             <p className="my-auto text-center text-lg font-semibold text-black">
                                                 {element.name}
                                             </p>
