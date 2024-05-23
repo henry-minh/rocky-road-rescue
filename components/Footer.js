@@ -84,20 +84,19 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="/merch"
-                                    className="flex text-base text-white transition-all duration-200 hover:text-orange-600 "
-                                >
-                                    Merch
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
                                     href="https://www.facebook.com/RockyRoadRescueCanada/events?ref=page_internal"
                                     target="_none"
                                     className="flex text-base text-white transition-all duration-200 hover:text-orange-600 "
                                 >
                                     Events
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/merch"
+                                    className="flex text-base text-white transition-all duration-200 hover:text-orange-600 "
+                                >
+                                    Merch
                                 </a>
                             </li>
                         </ul>
