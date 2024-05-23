@@ -125,7 +125,7 @@ export default function SwiperComponent(props) {
     ];
     // const { slides, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-        AutoScroll({ speed: 0.5 }),
+        AutoScroll({ speed: 0.6 }),
     ]);
     const [isPlaying, setIsPlaying] = useState(true);
 
@@ -175,16 +175,16 @@ export default function SwiperComponent(props) {
                         <div className="py-8">
                             <Image
                                 src={ourDogs[currentSlideIndex].img}
-                                className="mx-auto h-44 w-72 rounded-2xl object-cover  object-center drop-shadow-md md:h-72 md:w-96"
-                                width={200}
-                                height={200}
+                                className="mx-auto h-48 w-72 rounded-2xl object-cover  object-center drop-shadow-md md:h-72 md:w-96"
+                                width={100}
+                                height={100}
                                 loading="eager"
                                 alt={ourDogs[currentSlideIndex].name}
                             />
                         </div>
                     </div>
                     <div className="my-auto px-2 md:flex-1">
-                        <h1 className="my-4 text-center text-3xl">
+                        <h1 className=" text-center text-3xl">
                             {ourDogs[currentSlideIndex].name}
                         </h1>
                         <p className="text-center">
@@ -221,14 +221,14 @@ export default function SwiperComponent(props) {
                                 >
                                     <div className="embla__slide__number h-full transform rounded-2xl border-[12px] border-[#fef5d8] bg-[#fef5d8] drop-shadow-2xl transition-transform duration-300 hover:-translate-y-4">
                                         <div className="flex h-full w-full flex-col">
-                                            {/*                                             <Image
+                                            <Image
                                                 src={element.img}
                                                 className="h-full max-h-[80%] w-full rounded-xl object-cover object-center"
-                                                width={200}
-                                                height={200}
+                                                width={100}
+                                                height={100}
                                                 loading="eager"
                                                 alt={element.name}
-                                            />*/}
+                                            />
 
                                             <p className="my-auto text-center text-lg font-semibold text-black">
                                                 {element.name}
