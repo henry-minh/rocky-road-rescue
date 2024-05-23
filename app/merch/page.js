@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function Merch() {
     return (
-        <div className="text-zinc-900">
+        <div className=" text-zinc-900">
             <p>Merch Page Under Construction 🚧</p>
         </div>
     );

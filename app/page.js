@@ -12,8 +12,8 @@ export default function Home() {
     const reactTypedData = ['Donate', 'Foster', 'Adopt', 'Volunteer', 'Share'];
 
     return (
-        <div className="bg-slate-300 ">
-            <div className="flex h-[calc(100svh)] w-full border-b-8 border-b-black bg-[url(/dog-background-home.jpg)] bg-cover bg-center font-medium">
+        <div className="bg-zinc-900">
+            <div className="flex h-[calc(100svh)] w-full bg-[url(/dog-background-home.jpg)] bg-cover bg-center font-medium">
                 <div className="mx-auto  mt-[30%] h-min w-min font-teko font-light text-[#F5F5F5]  sm:mx-0 sm:ml-4 ">
                     <div className="text-6xl  font-medium lg:text-5xl xl:text-8xl">
                         <div className="flex ">

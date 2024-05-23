@@ -104,7 +104,7 @@ export default function Header({ children }) {
 
     return (
         <div>
-            <header className="h-[80px]  w-full">
+            <header className="h-[80px] w-full drop-shadow-xl">
                 <nav
                     className="mx-auto flex items-center gap-4  bg-zinc-900 lg:px-8"
                     aria-label="Global"

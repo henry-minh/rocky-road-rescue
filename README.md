@@ -2,11 +2,13 @@
 
 ## Libraries & Frameworks
 
-- React Typed
-- Embla Carousel
-- Embla Carousel React
-- Prettier Plugin (Tailwind)
-- Tailwind CSS
+-   React Typed
+-   Embla Carousel
+-   Embla Carousel React
+-   Embla Carousel React
+-   Prettier Plugin (Tailwind)
+-   Tailwind CSS
+-   Framer Motion
 
 First, run the development server:
 
